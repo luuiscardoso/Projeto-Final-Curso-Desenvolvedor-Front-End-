@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+  
+  .center{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 auto;
+      padding:0 2%;
+  }
+  
+  
+  header{
+      padding:2vh 0;
+      background-color: rgb(24, 24, 24);
+  }
+  
+  .logo{
+      width: 10vw;
+  }
+
+  .logo img{
+    width: 5vw;
+    display: block;
+  }
+
+  #icon{
+    margin-top: 1em;
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  .menu a{
+     padding: 1vw;
+     color: rgb(255, 255, 255);
+     text-decoration: none;
+     opacity: 1;
+     margin-right: 3em;
+  }
+
+  .menu a:hover{
+    opacity: 0.8;
+  }
+
+  .menu a{
+    width: 4vw;
+    background-color: #181818b6;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+  }
+
+
+  .menu a:hover{
+    opacity: 0.8;
+  }
+
+ .menu button{
+  background-color: #181818b6;
+  cursor: pointer;
+  opacity: 1;
+  border: none;
+  margin: .6vw;
+ }
+
+ .menu button:hover{
+  opacity: .8;
+ }
+
+  section.carrossel{
+    overflow: hidden;
+     margin: 3em auto;
+     width: 40vw;
+     height: 30vh;
+     transition: .05s;
+     
+  }
+
+  .container img{
+    object-fit: cover;
+    width: 40vw;
+    height: 30vh;
+  }
+
+.container{
+  display: flex;
+  transform: translateX(0);
+}
+
+.container-cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3%;
+  padding: 2%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  margin: 3vw auto;
+
+  height: 300px;
+  width: 250px;
+  border-radius: 18px;
+
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  position: relative;
+  
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  
+  background: linear-gradient(transparent, black);
+  opacity: 0.6;
+  transition: all 0.35s ease-in-out;
+  z-index: 1;
+  border-radius: 18px;
+}
+
+.card img{
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  transition: transform 250ms ease-in-out 0ms;;
+}
+
+.card:hover:before{
+  opacity: 0.8;
+}
+
+.card:hover .card img{
+  transform: scale(1.1);
+}
+
+h3{
+  font-size: 24px;
+  margin: 8px 0
+}
+
+p, h3, button{
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+}
+
+
+.card button{
+  padding: 0.5vh;
+  margin: 1vw auto;
+  color: white;
+  background-color: #ffffff34;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4vw;
+  font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  
+}
+
+.card button:hover{
+  opacity: .8;
+}
+
+.cart-titulo{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-top: 1vw ;
+}
+
+
+.detalhe-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-produto-titulo{
+  font-size: 1.5rem;
+  text-transform: uppercase
+}
+
+.cart-price{
+  font-weight: bold;
+}
+
+.cart-qtd{
+  border: 1px solid black;
+  outline-color: red ;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove{
+  font-size: 1em;
+  color: red;
+  cursor: pointer;
+}
+
+
+.cart-produto-titulo{
+  line-height: 1.5vw;
+}
+
+
+.total{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: .5vw;
+  padding: .3em;
+  gap: 1em;
+  border-top: 1px solid black;
+}
+
+.total-titulo{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price{
+  margin-left: 0.5rem;
+}
+
+#finalizar{
+  display: flex;
+  margin: 1.5rem auto 0 auto ;
+  padding: .7vw 1vw;
+  border: none;
+  background: red;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.finalizar:hover{
+  opacity: 0.8;
+}
+
+
+#modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 18.5vw;
+  min-height: 100vh;
+  padding: 1.3em;
+  background-color: rgba(255, 0, 0, 0.582);
+  box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+  z-index: 10;
+  transition: 0.3s;
+}
+
+
+
+#modal.hide{
+  opacity: 0;
+}
+
+ #modal.hide, #fade.hide{
+   opacity: 0;
+   pointer-events: none;
+}
+
+#fade{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 5;
+  
+}  
+
+#infos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 16.3vw;
+  height: 25vh;
+  padding: 2vh;
+}
+
+#infos input{
+  margin: 2px;
+  padding: 10px;
+  border-radius: .3vw;
+  font-family: 'Roboto', sans-serif;
+}
+
+#qtd-jogo{
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px red;
+  outline: none;
+  width: 5vw;
+  text-align: left;
+  font-size: 1rem;
+}
+
+#jogo{
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(255, 0, 0, 0.753)
+}
+
+.botaocalc{
+  display: flex;
+  justify-content: center;
+  padding: 2vw;
+}
+
+#vertotal{
+  padding: .6vw;
+  width: 10vw;
+  background: black;
+  border-radius:.3vw ;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#vertotal:hover{
+  opacity: .8;
+}
+
+.layoutpedido{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vw;
+  font-size: 1vw;
+  height: 1vw;
+
+}
+
+.resumopedido{
+  text-align: center;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.fimcompra{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20vh;
+  padding: 2vw;
+  
+}
+
+#finalizarcompra{
+  padding: .6vw;
+  width: 10vw;
+  background: black;
+  border-radius:.3vw ;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#finalizarcompra:hover{
+  opacity: .8;
+}
+
+@media screen and (max-width: 700px){
+  #vertotal{
+    width: 30vw;
+  }
+
+  #finalizarcompra{
+    width: 30vw;
+  }
+
+  .fimcompra{
+    height: 23vh;
+  }
+
+  .layoutpedido{
+    font-size: 1.3vw;
+  }
+
+  #quantidade{
+    font-size: 1.5vw;
+  }
+
+  #valorTotal{
+    font-size: 1.5vw;
+  }
+
+  #infos{
+    width: 15vw;
+  }
+
+  #infos input{
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+ 
+

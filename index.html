@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="stylehome.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="center">
+        <div class="logo"><img src="pngaaa.com-435486.png" alt="" /></div>
+
+        <div class="menu">
+          <a href="contato.html">Contato</a>
+
+          <div>
+           <button id="abrir-modal">
+             <img src="icons8-carrinho-de-compras-30.png" alt="">
+           </button>
+          </div>
+        </div>
+
+        
+      </div>
+    </header>
+
+    <div id="fade" class="hide"></div>
+    <div id="modal"class="hide">
+      <h2 class="cart-titulo">Seu Carrinho</h2>
+      <div class="cart-conteudo">
+
+         <div class="cart-box">
+            
+            <div class="detalhe-box">
+            
+            <div id="infos">
+              <input type="text" id="jogo" ></input> <br><br>
+              <input type="number" name="qtd" id="qtd-jogo">
+            </div>
+            
+            
+            </div>
+          
+         </div>
+      </div>
+
+      
+
+    <div>
+        <div id="quantidade"></div>
+    </div>
+    
+    <div>
+        <div id="valor"></div>
+    </div>
+
+      <div class="total" id="valorTotal"></div>
+
+      <div class="botaocalc">
+        <button id="vertotal">CALCULAR TOTAL</button>
+      </div>
+      
+     <div class="resumopedido">
+      <h1>Seu Pedido</h1>
+          <div class="layoutpedido">
+               <div id="carrinho"></div>
+         </div>
+     </div>
+
+     <div class="fimcompra">
+        <button id="finalizarcompra">FINALIZAR COMPRA</button>
+     </div>
+      
+</div>
+ 
+
+
+
+
+    <main>
+      <section class="carrossel">
+        <div class="container" id="img">
+          <div>
+            <img src="reddead2.webp" alt="" />
+          </div>
+          <div>
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/capsule_616x353.jpg?t=1667343890"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1919590/capsule_616x353.jpg?t=1666364639"
+              alt=""
+            />
+          </div>
+          <div>
+            <img src="https://t2.tudocdn.net/641805?w=660" alt="" />
+          </div>
+          <div>
+            <img
+              src="https://cdn.akamai.steamstatic.com/steam/apps/1593500/capsule_616x353.jpg?t=1650554420"
+              alt=""
+            />
+          </div>
+          <div>
+            <img src="https://t2.tudocdn.net/633092?w=646&h=284" alt="" />
+          </div>
+          <div>
+            <img
+              src="https://2.bp.blogspot.com/-rT7gkGwJVFE/XMz-pYrUU3I/AAAAAAAABos/H8-iqJEmX98Td7XiCOycue-bO0qh3lDyQCLcBGAs/w1200-h630-p-k-no-nu/Days%2BGone.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img src="https://t2.tudocdn.net/225920?w=1920" alt="" />
+          </div>
+          <div>
+            <img
+              src="https://img.hype.games/cdn/b8a3b6d1-0ba9-4161-bf87-12dc27d18254Cover_ForzaHorizon5Edi%C3%A7%C3%A3oSuprema-600.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_auto/c_scale,w_720/v1/ncom/pt_BR/games/switch/t/the-witcher-3-wild-hunt-switch/hero"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn.akamai.steamstatic.com/steam/apps/976310/capsule_616x353.jpg?t=1634068925"
+              alt=""
+            />
+          </div>
+          <div>
+            <img src="https://t2.tudocdn.net/529608?w=1920" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="produtos">
+        <div class="container-cards">
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://image.api.playstation.com/cdn/UP1004/CUSA03041_00/Hpl5MtwQgOVF9vJqlfui6SDB5Jl4oBSq.png"
+              alt=""
+            />
+
+            <p class="price">R$230</p>
+            <button class="add" id="reddead">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://image.api.playstation.com/vulcan/ap/rnd/202101/2019/JdvqcPlTYMxXrA1QQJm6TbDX.png"
+              alt=""
+            />
+
+            <p class="price">R$154</p>
+            <button class="add" id="gta">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://s2.glbimg.com/8M5_aV7Yo0eNtNhSb_rkmJ-Adp0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/3/s/x8hqaYToKXwo0EstG2fw/capa-nba-2k23-devin-booker.jpeg"
+              alt=""
+            />
+
+            <p class="price">R$349</p>
+            <button class="add" id="nba">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://conteudo.imguol.com.br/c/esporte/5f/2022/07/18/capa-do-fifa-23-com-mpabbe-e-sam-kerr-1658163967531_v2_1x1.jpg"
+              alt=""
+            />
+
+            <p class="price">R$248</p>
+            <button class="add" id="fifa">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://image.api.playstation.com/vulcan/img/rnd/202011/1021/X3WIAh63yKhRRiMohLoJMeQu.png"
+              alt=""
+            />
+
+            <p class="price">R$60</p>
+            <button class="add" id="gow">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://assets.reedpopcdn.com/20EECEC8-6102-41A3-9A45-72313B462739.jpeg/BROK/thumbnail/1200x1200/quality/100/20EECEC8-6102-41A3-9A45-72313B462739.jpeg"
+              alt=""
+            />
+
+            <p class="price">R$329</p>
+            <button class="add" id="cod">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://lebetatesteur.ca/wp-content/uploads/2021/05/days-gone-800x445.jpg"
+              alt=""
+            />
+
+            <p class="price">R$58</p>
+            <button class="add" id="daysgone">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://assets-prd.ignimgs.com/2021/12/08/horizonzerodawn-1638924347525.jpg"
+              alt=""
+            />
+
+            <p class="price">R$64</p>
+            <button class="add" id="horizon">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://tweakers.net/i/YhzG8p4WkbHoQFN7uQCGrNnIHZc=/i/2004426038.jpeg"
+              alt=""
+            />
+
+            <p class="price">R$99</p>
+            <button class="add" id="forza">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://image.api.playstation.com/vulcan/img/rnd/202009/2913/TQKAd8U6hnIFQIIcz6qnFh8C.png"
+              alt=""
+            />
+
+            <p class="price">R$41</p>
+            <button class="add" id="thew">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://sm.ign.com/ign_br/screenshot/default/dwk6fihxcautgjs_j74m.jpg"
+              alt=""
+            />
+
+            <p class="price">R$68</p>
+            <button class="add" id="mk11">Selecionar</button>
+          </div>
+
+          <div class="card">
+            <img
+              class="card-img"
+              src="https://upload.wikimedia.org/wikipedia/pt/9/96/The_Last_of_Us_2_capa.png"
+              alt=""
+            />
+
+            <p class="price">R$199</p>
+            <button class="add" id="thelast">Selecionar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+  </body>
+</html>
